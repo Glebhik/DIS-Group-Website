@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DIS Group Logo V2 — Circular Badge (business cards / presentations) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 300" role="img" aria-label="DIS Group — Dismelt Irish Services Group">
+  <defs>
+    <!-- Arrowhead -->
+    <marker id="v2-arr" viewBox="0 0 12 10" refX="11" refY="5"
+            markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="10"
+            orient="auto">
+      <polygon points="0,0 12,5 0,10" fill="#22c55e"/>
+    </marker>
+    <!-- Outer badge ring gradient -->
+    <linearGradient id="v2-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d2040"/>
+      <stop offset="100%" stop-color="#051020"/>
+    </linearGradient>
+    <!-- Globe fill -->
+    <radialGradient id="v2-globe" cx="38%" cy="32%" r="70%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </radialGradient>
+    <!-- Outer circle clip for globe lines -->
+    <clipPath id="v2-gclip">
+      <circle cx="130" cy="124" r="80"/>
+    </clipPath>
+    <!-- Circular text path -->
+    <path id="v2-textcircle" d="M 130,32 A 92,92 0 1 1 129.9,32 Z"/>
+  </defs>
+
+  <!-- ── OUTER DECORATIVE RING ── -->
+  <circle cx="130" cy="124" r="115" fill="url(#v2-ring)"/>
+  <!-- Double ring border -->
+  <circle cx="130" cy="124" r="115" fill="none" stroke="#16a34a" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="6 4"/>
+  <circle cx="130" cy="124" r="108" fill="none" stroke="#16a34a" stroke-width="0.5" stroke-opacity="0.25"/>
+
+  <!-- ── GLOBE BACKGROUND ── -->
+  <circle cx="130" cy="124" r="82" fill="url(#v2-globe)"/>
+  <!-- Globe surface lines -->
+  <g clip-path="url(#v2-gclip)" stroke="#93c5fd" fill="none">
+    <!-- Equator -->
+    <line x1="48" y1="124" x2="212" y2="124" stroke-width="1" opacity="0.6"/>
+    <!-- Tropic lines -->
+    <path d="M 55,100 Q 130,93 205,100" stroke-width="0.9" opacity="0.4"/>
+    <path d="M 55,148 Q 130,155 205,148" stroke-width="0.9" opacity="0.4"/>
+    <!-- Polar lines -->
+    <path d="M 78,78 Q 130,70 182,78" stroke-width="0.8" opacity="0.3"/>
+    <path d="M 78,170 Q 130,178 182,170" stroke-width="0.8" opacity="0.3"/>
+    <!-- Meridians -->
+    <path d="M 130,42 C 158,62 158,186 130,206" stroke-width="0.9" opacity="0.5"/>
+    <path d="M 130,42 C 102,62 102,186 130,206" stroke-width="0.9" opacity="0.5"/>
+    <path d="M 130,42 C 175,80 175,168 130,206" stroke-width="0.8" opacity="0.35"/>
+    <path d="M 130,42 C 85,80 85,168 130,206" stroke-width="0.8" opacity="0.35"/>
+    <!-- Prime meridian (vertical) -->
+    <line x1="130" y1="42" x2="130" y2="206" stroke-width="1" opacity="0.6"/>
+  </g>
+  <!-- Globe highlight -->
+  <circle cx="108" cy="98" r="22" fill="white" opacity="0.07"/>
+  <!-- Globe border -->
+  <circle cx="130" cy="124" r="82" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- ── D FORMED BY RECYCLING ARROWS ── -->
+  <!-- Arc center: (80, 124), radius: 72 -->
+  <!-- D stem -->
+  <rect x="46" y="52" width="14" height="144" rx="7" fill="#22c55e"/>
+
+  <!-- Arrow 1: 270° → 325° (top arc) -->
+  <path d="M 80,52 A 72,72 0 0 1 138.8,88.8"
+        stroke="#22c55e" stroke-width="12" stroke-linecap="round" fill="none"
+        marker-end="url(#v2-arr)"/>
+  <!-- Arrow 2: 335° → 25° (middle arc) -->
+  <path d="M 145.3,101.7 A 72,72 0 0 1 145.3,146.3"
+        stroke="#22c55e" stroke-width="12" stroke-linecap="round" fill="none"
+        marker-end="url(#v2-arr)"/>
+  <!-- Arrow 3: 35° → 90° (bottom arc) -->
+  <path d="M 138.8,159.2 A 72,72 0 0 1 80,196"
+        stroke="#22c55e" stroke-width="12" stroke-linecap="round" fill="none"
+        marker-end="url(#v2-arr)"/>
+
+  <!-- ── WRENCH — bottom area of badge ── -->
+  <g transform="translate(176,182) rotate(-40) scale(1.1)">
+    <!-- Wrench ring head -->
+    <circle r="11" fill="none" stroke="#1f2937" stroke-width="7"/>
+    <!-- Handle -->
+    <rect x="-4.5" y="9" width="9" height="21" rx="4.5" fill="#1f2937"/>
+    <!-- Open jaw (slot at top) -->
+    <rect x="-4.5" y="-18" width="9" height="9" fill="#1e3a8a"/>
+  </g>
+
+  <!-- ── CIRCULAR TEXT PATH ── -->
+  <!-- Curved text: "DISMELT IRISH SERVICES GROUP" -->
+  <text font-family="'Arial','Helvetica',sans-serif" font-weight="700"
+        font-size="10.5" fill="#4a8060" letter-spacing="3.5">
+    <textPath href="#v2-textcircle" startOffset="3%">
+      DISMELT IRISH SERVICES GROUP · IRELAND
+    </textPath>
+  </text>
+
+  <!-- Small dots as text separators on outer ring -->
+  <circle cx="130" cy="12" r="2" fill="#16a34a" opacity="0.6"/>
+  <circle cx="230" cy="48" r="1.5" fill="#16a34a" opacity="0.4"/>
+  <circle cx="30" cy="48" r="1.5" fill="#16a34a" opacity="0.4"/>
+
+  <!-- ── TEXT BELOW BADGE ── -->
+  <!-- DIS GROUP -->
+  <text x="130" y="256"
+        font-family="'Rajdhani','Arial Black',sans-serif"
+        font-weight="700" font-size="34"
+        fill="white" letter-spacing="8" text-anchor="middle">DIS GROUP</text>
+  <!-- Tagline -->
+  <text x="130" y="278"
+        font-family="'Arial','Helvetica',sans-serif"
+        font-weight="400" font-size="9"
+        fill="#4a6080" letter-spacing="2" text-anchor="middle">DISMELT IRISH SERVICES GROUP</text>
+
+</svg>

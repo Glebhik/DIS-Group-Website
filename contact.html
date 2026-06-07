@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="Contact DIS Group — Glib Vakunov, Managing Director. +353 87 444 9778 · dismelt.ireland@gmail.com · County Wicklow, Ireland."/>
+<title>Contact — DIS Group</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/DIS_Logo_Horizontal_NEW.svg" alt="DIS Group">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <a href="tel:+353874449778" class="btn btn-primary nav-cta">+353 87 444 9778</a>
+    <button class="nav-burger" id="burger" aria-expanded="false" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="sustainability.html">Sustainability</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="tel:+353874449778" class="btn btn-primary">+353 87 444 9778</a>
+  </div>
+</nav>
+
+<!-- ═══ PAGE HERO ═══ -->
+<div class="page-hero">
+  <div class="container page-hero-inner">
+    <p class="eyebrow eyebrow--lt eyebrow--white">Get in Touch</p>
+    <h1 class="page-hero-title">Let's Talk Business.</h1>
+    <p class="page-hero-sub">Scrap to move, a vehicle to dispose of, a site to clear, or a waste programme to build — call or message us and we respond same day.</p>
+  </div>
+</div>
+
+<!-- ═══ CONTACT ═══ -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: Contact info -->
+      <div>
+        <div class="contact-person">
+          <div class="cp-name">Glib Vakunov</div>
+          <div class="cp-role">Managing Director — DIS Group</div>
+          <div class="cp-details">
+
+            <div class="cp-item">
+              <div class="cp-ico">📞</div>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+353874449778">+353 87 444 9778</a>
+              </div>
+            </div>
+
+            <div class="cp-item">
+              <div class="cp-ico">✉</div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:dismelt.ireland@gmail.com">dismelt.ireland@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="cp-item">
+              <div class="cp-ico">📍</div>
+              <div>
+                <strong>Location</strong>
+                <span>County Wicklow, Ireland</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="contact-hours">
+          <p><strong>Business Hours</strong><br/>
+          Monday – Friday: 8:00am – 6:00pm<br/>
+          Saturday: 9:00am – 1:00pm<br/>
+          Sunday: Closed</p>
+          <br/>
+          <p>For urgent collections outside these hours, leave a voicemail and we will return your call on the next business morning.</p>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-wrap">
+        <div class="form-title">Send us a message</div>
+        <p class="form-sub">We typically respond within a few hours during business hours.</p>
+
+        <form id="contact-form" novalidate>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="f-name">Your Name *</label>
+              <input type="text" id="f-name" name="name" placeholder="John Murphy" required/>
+            </div>
+            <div class="form-group">
+              <label for="f-company">Company</label>
+              <input type="text" id="f-company" name="company" placeholder="Murphy Metals Ltd"/>
+            </div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="f-email">Email *</label>
+              <input type="email" id="f-email" name="email" placeholder="john@example.ie" required/>
+            </div>
+            <div class="form-group">
+              <label for="f-phone">Phone</label>
+              <input type="tel" id="f-phone" name="phone" placeholder="08X XXX XXXX"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f-service">Service Required</label>
+            <select id="f-service" name="service">
+              <option value="">— Select a service —</option>
+              <option>Aluminium Recycling</option>
+              <option>Vehicle Dismantling (ELV)</option>
+              <option>Logistics Coordination</option>
+              <option>Circular Economy Consulting</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" rows="5"
+              placeholder="Describe your materials, volumes, or project…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full btn-lg" id="submit-btn"
+            style="margin-top:8px">Send Message</button>
+          <p class="form-note">Your details are used solely to respond to your enquiry.</p>
+        </form>
+
+        <div class="form-success" id="form-success">
+          ✓ &nbsp;Message sent — we'll be in touch shortly.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/DIS_Logo_Horizontal_NEW.svg" alt="DIS Group"/>
+        <p>Dismelt Irish Services Group — Ireland's specialist in aluminium recycling, vehicle dismantling, logistics, and circular economy consulting. County Wicklow.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Company</p>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="projects.html">Projects</a>
+          <a href="sustainability.html">Sustainability</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <div class="footer-links">
+          <a href="services.html#aluminium">Aluminium Recycling</a>
+          <a href="services.html#vehicles">Vehicle Dismantling</a>
+          <a href="services.html#logistics">Logistics</a>
+          <a href="services.html#consulting">Consulting</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <div class="footer-links">
+          <a href="tel:+353874449778">+353 87 444 9778</a>
+          <a href="mailto:dismelt.ireland@gmail.com">dismelt.ireland@gmail.com</a>
+          <address>County Wicklow, Ireland</address>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 DIS Group (Dismelt Irish Services Group). All rights reserved.</p>
+      <p>EPA Licensed &nbsp;·&nbsp; ELV Directive Compliant &nbsp;·&nbsp; County Wicklow, Ireland</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

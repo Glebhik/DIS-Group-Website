@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DIS Group Logo V1 — Horizontal Corporate (navbar / letterhead) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" role="img" aria-label="DIS Group — Dismelt Irish Services Group">
+  <defs>
+    <!-- Arrowhead for recycling arrows -->
+    <marker id="v1-arr" viewBox="0 0 12 10" refX="11" refY="5"
+            markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11"
+            orient="auto">
+      <polygon points="0,0 12,5 0,10" fill="#22c55e"/>
+    </marker>
+    <!-- Icon badge gradient -->
+    <radialGradient id="v1-badge" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0f2245"/>
+      <stop offset="100%" stop-color="#04080f"/>
+    </radialGradient>
+    <!-- Green gradient for D -->
+    <linearGradient id="v1-green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <!-- Globe gradient -->
+    <radialGradient id="v1-globe" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </radialGradient>
+    <!-- Globe clip -->
+    <clipPath id="v1-globeclip">
+      <circle cx="44" cy="60" r="14"/>
+    </clipPath>
+  </defs>
+
+  <!-- ── ICON BADGE ── -->
+  <!-- Outer ring -->
+  <circle cx="60" cy="60" r="56" fill="url(#v1-badge)"/>
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#16a34a" stroke-width="1.2" stroke-opacity="0.35"/>
+
+  <!-- D STEM -->
+  <rect x="17" y="22" width="10" height="76" rx="5" fill="url(#v1-green)"/>
+
+  <!-- D ARC — 3 recycling arrows (clockwise, arc center at x=27 y=60 r=37) -->
+  <!-- Arrow 1: top → first junction (angle 270° → 325°) -->
+  <path d="M 27,23 A 37,37 0 0 1 57.3,38.7"
+        stroke="url(#v1-green)" stroke-width="7" stroke-linecap="round" fill="none"
+        marker-end="url(#v1-arr)"/>
+  <!-- Arrow 2: first gap → second junction (335° → 25°) -->
+  <path d="M 60.5,44.3 A 37,37 0 0 1 60.5,75.7"
+        stroke="url(#v1-green)" stroke-width="7" stroke-linecap="round" fill="none"
+        marker-end="url(#v1-arr)"/>
+  <!-- Arrow 3: second gap → bottom (35° → 90°) -->
+  <path d="M 57.3,81.3 A 37,37 0 0 1 27,97"
+        stroke="url(#v1-green)" stroke-width="7" stroke-linecap="round" fill="none"
+        marker-end="url(#v1-arr)"/>
+
+  <!-- GLOBE — inside the D curve -->
+  <circle cx="44" cy="60" r="14" fill="url(#v1-globe)"/>
+  <!-- Globe lines -->
+  <g clip-path="url(#v1-globeclip)" stroke="#93c5fd" fill="none" opacity="0.7">
+    <!-- Equator -->
+    <line x1="30" y1="60" x2="58" y2="60" stroke-width="0.9"/>
+    <!-- Meridian left -->
+    <path d="M 44,46 C 38,50 38,70 44,74" stroke-width="0.8"/>
+    <!-- Meridian right -->
+    <path d="M 44,46 C 50,50 50,70 44,74" stroke-width="0.8"/>
+    <!-- Upper parallel -->
+    <path d="M 33,54 Q 44,51 55,54" stroke-width="0.7" opacity="0.6"/>
+    <!-- Lower parallel -->
+    <path d="M 33,66 Q 44,69 55,66" stroke-width="0.7" opacity="0.6"/>
+  </g>
+  <!-- Globe highlight -->
+  <circle cx="38" cy="53" r="4" fill="white" opacity="0.1"/>
+
+  <!-- WRENCH — bottom right of badge -->
+  <!-- Wrench head (ring) + handle -->
+  <g transform="translate(88,85) rotate(-40)">
+    <circle r="9" fill="none" stroke="#374151" stroke-width="5.5"/>
+    <rect x="-3.5" y="8" width="7" height="17" rx="3.5" fill="#374151"/>
+    <!-- Jaw slot -->
+    <rect x="-3.5" y="-14" width="7" height="7" fill="#04080f"/>
+  </g>
+  <!-- Small glow dot under wrench -->
+  <circle cx="88" cy="85" r="14" fill="none" stroke="#374151" stroke-width="0.5" stroke-opacity="0.3"/>
+
+  <!-- ── DIVIDER ── -->
+  <line x1="131" y1="22" x2="131" y2="98" stroke="#16a34a" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- ── TEXT BLOCK ── -->
+  <!-- DIS -->
+  <text x="152" y="63"
+        font-family="'Rajdhani','Arial Black','Impact',sans-serif"
+        font-weight="700" font-size="52" fill="white" letter-spacing="5">DIS</text>
+  <!-- GROUP -->
+  <text x="155" y="84"
+        font-family="'Rajdhani','Arial',sans-serif"
+        font-weight="600" font-size="19" fill="#22c55e" letter-spacing="13">GROUP</text>
+  <!-- Tagline -->
+  <text x="155" y="102"
+        font-family="'Arial','Helvetica',sans-serif"
+        font-weight="400" font-size="9" fill="#4a6080" letter-spacing="2.8">DISMELT IRISH SERVICES GROUP</text>
+
+</svg>
